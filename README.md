@@ -25,6 +25,7 @@ Beim Start wirst du gefragt:
 Anzahl roter Patronen (z. B. 3)
 Anzahl blauer Patronen (z. B. 5)
 
+
 2. Vorhersage erhalten
 
 Das Programm nutzt:
@@ -32,9 +33,11 @@ Das Programm nutzt:
 self.counts[color] * self.weights[color]
 
 → Die Wahrscheinlichkeit wird dynamisch berechnet.
+
 3. Ziehung bestätigen
 
 Du gibst ein, ob die Vorhersage korrekt war bzw. welche Patrone tatsächlich kam.
+
 4. So lernt der Code
 
 Wenn die Vorhersage falsch war, merkt sich das Programm:
@@ -43,6 +46,7 @@ if prediction != gezogen:
     self.weights[gezogen] += 1.0
 
 → Das bedeutet: beim nächsten Mal wird diese Farbe wahrscheinlicher vorausgesagt.
+
 5. Inverter verwenden
 
 Wenn der Inverter im Spiel ist, kannst du mit einem Klick die Vorhersage umdrehen:
@@ -115,9 +119,11 @@ The app uses:
 self.counts[color] * self.weights[color]
 
 → Calculates the weighted chance for each color.
+
 3. Input the Actual Shell
 
 You confirm whether the prediction was correct.
+
 4. The Learning Mechanism
 
 If the guess was wrong, the app does this:
@@ -126,6 +132,7 @@ if prediction != drawn:
     self.weights[drawn] += 1.0
 
 → This increases the chance for the correct result next time.
+
 5. Using the Inverter
 
 If the Inverter item is used, click:
